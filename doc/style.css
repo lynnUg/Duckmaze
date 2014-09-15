@@ -1,0 +1,29 @@
+body {
+	font-family: verdana, sans-serif;
+    font-size: small;
+	background-color: #FFFFFF;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: large;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: medium;
+    font-weight: 550;
+}
+
+address {
+    text-align: center;
+    font-style: normal;
+    font-size: x-small;
+    padding: 5px;
+    background-color: #E0FFE0;
+}
+

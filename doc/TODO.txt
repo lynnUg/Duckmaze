@@ -1,0 +1,24 @@
+Time flows upwards.
+'-' means to do, '+' means done.
+Subject to change at any time, for any reason.
+
+- 0.3
+
+- Allow to play custom levels
+- Remove mouse pointer from GP2X level editor
+- More levels
+
++ 0.2
+
++ A decent number of levels (18)
++ Faster level editor
++ Faster menus
++ Fix bug where time doesn't count down after restarting
+
++ 0.1
+
++ Main game mechanics
++ Level editor
++ A couple of levels
++ Basic docs
+

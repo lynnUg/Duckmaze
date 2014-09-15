@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>duckmaze</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<address>GP2X games:
+<a href="http://mopesnake.sourceforge.net">mop(e)snake</a> | duckmaze</address>
+
+<p><img src="logo.png" alt="duckmaze" width="200" height="150" /></p>
+
+<p>duckmaze is a game about a duck that is in a maze.  The duck can move walls,
+but only if there are no walls in the way (it makes sense when you try it).</p>
+
+<p>It's a simple puzzle game which starts with easy levels but progresses to
+some quite tricky ones.</p>
+
+<p>The game includes a full level editor, so feel free to create your own and
+send them in!</p>
+
+<p style="color:red">NOTE: At the moment, duckmaze has no sound effects
+or music.  This will be fixed soon!</p>
+
+<p><img src="screenshot1.png" alt="duckmaze" width="650" height="509" /></p>
+
+<h2>Getting duckmaze</h2>
+
+<h3>Python and PyGame</h3>
+
+<p>To run duckmaze, you will need to install Python and the PyGame library.
+On Linux this should be a simple case of
+<tt>apt-get install python-pygame</tt> or
+<tt>yum install pygame</tt> or similar.</p>
+
+<p>On Windows, you will need to download the relevant installers and install
+them.</p>
+
+<h3>Windows PC</h3>
+
+<p>If you want to run duckmaze on a Windows PC (i.e. a normal computer),
+download the file duckmaze-pc-XXX.zip from the <a href="http://sourceforge.net/project/showfiles.php?group_id=184166&package_id=214136">Sourceforge
+download area</a>, and unzip it.</p>
+
+<p>Double-click on duckmaze.py and hopefully the game will run.  If you have
+problems, open a DOS or Cmd window, cd into the directory where you unzipped
+duckmaze, and type <tt>python duckmaze.py</tt></p>
+
+<h3>Linux PC</h3>
+
+<p>Download the file duckmaze-pc-XXX.zip from the <a href="http://sourceforge.net/project/showfiles.php?group_id=184166&package_id=214136">Sourceforge
+download area</a>, and unzip it.</p>
+
+<p>cd to the directory where you unzipped the file, and type
+<tt>./duckmaze.py</tt>.  Alternatively, try <tt>python duckmaze.py</tt></p>
+
+<h3>GP2X</h3>
+
+<p>If you have the excellent <a href="http://gp2x.co.uk/">GP2X</a> handheld
+games console, first you need to make sure you have Python and the PyGame
+library installed.  The easiest way to get these is to download both of
+them as a single zip file.  There is a known-working version on the
+mop(e)snake download page: <a href="http://sourceforge.net/project/showfiles.php?group_id=179489&package_id=215400">pygame_gp2x</a>
+but there may be more recent versions linked from here: <a href="http://wiki.gp2x.org/wiki/Pygame">http://wiki.gp2x.org/wiki/Pygame</a>.
+You should unzip the file and copy the "python" directory over to the
+root directory of your GP2X's sd card.</p>
+
+<p>Now download the file duckmaze-gp2x-XXX.zip from the
+<a href="http://sourceforge.net/project/showfiles.php?group_id=184166&package_id=214136">Sourceforge
+download area</a> and unzip it on your PC, before
+copying the unzipped directory across to your GP2X.  You should now be able
+to choose "Games" in the GP2X menu, navigate to the directory you copied over,
+and start the game by choosing "duckmaze".</p>
+
+<div style="float: right;"><img src="screenshot2.png" alt="Playing duckmaze"
+width="200" height="157" /></div>
+
+<h2>Playing duckmaze</h2>
+
+<h3>PC</h3>
+
+<p>Press any key to start, and use the arrow keys to control the duck.  Try to
+get out of the maze, and don't forget you can move walls, but only if there
+is not another wall in the way!</p>
+
+<p>You can also use the good old fashioned O, P, Q, A key layout
+you remember from your ZX Spectrum days.  You can also redefine the keys by
+modifying the config file in ~/.duckmaze/config.  Figuring out the format of
+that file is left as an exercise for the reader.</p>
+
+<p>Press ESCAPE on the title screen to enter the menu, which allows
+you to change the level you start at (once you have unlocked them) and turn the
+music and sound effects on or off.  You can also go to the level editor from
+this menu (see later).  Press ESCAPE during the game to pause or quit.</p>
+
+<h3>GP2X</h3>
+
+<p>Press any button to start, and use the joystick and/or the A, B, X and Y
+buttons to control the duck.  Try to
+get out of the maze, and don't forget you can move walls, but only if there
+is not another wall in the way!</p>
+
+<p>Press START on the title screen to enter the menu, which allows
+you to change the level you start at (once you have unlocked them) and turn the
+music and sound effects on or off.  You can also go to the level editor from
+this menu (see later).  Press START during the game to pause or quit.</p>
+
+<div style="float: right;"><img src="screenshot3.png" alt="Level editor"
+width="200" height="157" /></div>
+
+<h2>Creating Levels</h2>
+
+<h3>PC</h3>
+
+<p>Press ESCAPE and choose 'Level editor' from the menu.  You can either create
+a new level, or load one you have already created.</p>
+
+<p>Once you have created or
+loaded a level, you will see the level, and your cursor to add or remove
+walls.  Move the cursor using the mouse or the arrow keys, and left-click
+(or press RETURN) to add or remove a wall, and right-click (or press SPACE)
+to move the start position of the duck.</p>
+
+<p>When you are happy with your level, press ESCAPE to display the menu and
+choose 'Save level'.  You can choose to save it as a new custom level, or
+overwrite one you saved before.</p>
+
+<p>Please send in your level designs to duckmaze-devel at
+lists dot sourceforge dot net.  It would be great to see them, and if they're
+tricky and/or interesting enough, they will appear in the next release!</p>
+
+<p style="color: red;">NOTE: At the moment, there is no easy way to play the
+levels you create.  They are saved in the levels directory inside the
+duckmaze directory, and to play them you must rename them from 'custom_xxx'
+to 'level_xxx'.  When you have done that, they will become part of the normal
+game.  This will be fixed in a future version, so that you can play custom
+levels directly.</p>
+
+<h3>GP2X</h3>
+
+<p>Press START and choose 'Level editor' from the menu.  You can either create
+a new level, or load one you have already created.</p>
+
+<p>One you have created or
+loaded a level, you will see the level, and your cursor to add or remove
+walls.  Move the cursor using joystick, and press B to add or remove a wall,
+and A to move the start position of the duck.</p>
+
+<p>When you are happy with your level, press START to display the menu and
+choose 'Save level'.  You can choose to save it as a new custom level, or
+overwrite one you saved before.</p>
+
+<p>Please send in your level designs to duckmaze-devel at
+lists dot sourceforge dot net.  It would be great to see them, and if they're
+tricky and/or interesting enough, they will appear in the next release!</p>
+
+<p style="color: red;">NOTE: At the moment, there is no easy way to play the
+levels you create.  They are saved in the levels directory inside the
+duckmaze directory, and to play them you must rename them from 'custom_xxx'
+to 'level_xxx'.  When you have done that, they will become part of the normal
+game.  This will be fixed in a future version, so that you can play custom
+levels directly.</p>
+
+<h2>Development</h2>
+
+<p>duckmaze is written in <a href="http://www.python.org/">Python</a>,
+using the <a href="http://www.pygame.org/">PyGame</a> library, which is a
+convenient wrapper on the <a href="http://www.libsdl.org/">SDL</a>
+libraries.</p>
+
+<p>duckmaze's source code is stored in an SVN repository.  Make sure you
+have the SVN command-line client (should be already installed on most
+Linux distros, but will need to be installed on Windows), and type:</p>
+
+<p><tt>svn co https://duckmaze.svn.sourceforge.net/svnroot/duckmaze/trunk
+duckmaze</tt></p>
+
+<p>To run, type:</p>
+
+<p><tt>cd duckmaze</tt><br />
+<tt>./duckmaze.py</tt></p>
+
+<p>On Windows, the last line should be:</p>
+
+<p><tt>python duckmaze.py</tt></p>
+
+<p>Patches, suggestions and comments welcome!  Send them to our developers'
+mailing list.</p>
+
+<p>If you're interested in what's planned for the future, check out the
+<a href="TODO.txt">TODO list</a>.</p>
+
+<h2>Trivia</h2>
+
+<p>My homepage can be found at
+<a href="http://www.artificialworlds.net">www.artificialworlds.net</a>.
+My name, by the way, is Andy Balaam.</p>
+
+<h2>Contact</h2>
+
+<p>You can contact the developers of duckmaze by emailing duckmaze-devel at
+lists dot sourceforge dot net.  The
+<a href="http://sourceforge.net/mail/?group_id=184166">list archives</a>
+may also be useful.</p>
+
+<h2>Links</h2>
+
+<ul>
+<li>The <a href="http://happypenguin.org/show?duckmaze">duckmaze</a> page on the Linux Game Tome (happypenguin.org).</li>
+</ul>
+
+<h2>Licence</h2>
+
+<p>duckmaze is Copyright (C) 2006-2007 by Andy Balaam.</p>
+
+<p>duckmaze is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version. This licence is contained in the file
+<a href="COPYING.txt">COPYING.txt</a>.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+details.</p>
+
+<p>You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc., 59
+Temple Place, Suite 330, Boston, MA 02111-1307 US</p>
+
+<p><a href="http://sourceforge.net"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=184166&amp;type=1" width="88" height="31" border="0" alt="SourceForge.net Logo" /></a></p>
+
+</body>
+
+</html>
