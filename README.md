@@ -17,9 +17,6 @@ On Mac , pip install hg+http://bitbucket.org/pygame/pygame
 
 ##- Potential Challenge
 
-The Duck in duckmaze currently moves left , right , up and down. I would like the geeks at geeknight to add a unique sound to every movement of the duck. When the duck move left , it should meow(cat), move right , it should bark (dog) , move up , it should cluck(chicken) and move down ,it should moo(cow).
-
-
-I shall walk the geeks through the codeset placing focus on the functions we shall be using. Which is class SoundManager in mopelib/mopelib.py and the function def inlevel_input( event, gamestate ) in duckmaze.py(this function is filled with if statements).
+The Duckmaze currently has menu that is displayed only when the game is starting out at level 1 and when the game is paused. The current menus have a function that allows one to switch the music on and off . I would like to participants to extend the music function and add a music menu. 
 
 
