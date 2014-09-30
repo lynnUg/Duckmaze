@@ -181,7 +181,13 @@ def intro_draw_instructions():
 		(0, 0, 0), 0.05, 0.99 )
 
 # ----------------------
-
+def music_menu(menu, config, gamestate):
+	menu_items=[]
+	menu.add_item("Super Mario theme song", 0)
+	menu.add_item("GOOGLE MY BULBUL",1)
+	menu.add_item("Cake town",2)
+	return menu
+	
 def general_menu_create_menu( menu, config, gamestate ):
 	menu.items = []
 	if gamestate == None:	# We are on a title screen - Start Game option
